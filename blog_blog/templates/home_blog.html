@@ -1,0 +1,22 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+
+{% block content %}
+
+        {% include 'posts_category_partial.html' with categories=categories %}
+
+        <section id="page-content">
+            <div class="container">
+            
+                <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
+                    {% for post in post_list %}
+                        {% include 'post_component.html' with post=post %}
+                    {% endfor %}
+                </div>
+
+                {% include 'paginator.html'%}
+
+            </div>
+        </section>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+
+<!-- Pagination -->
+<ul class="pagination">
+    {% if post_list.has_previous %}
+        <li class="page-item"><a class="page-link" href="?{% if request.GET.q %}q={{ request.GET.q }}&{% endif %}page={{ post_list.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
+    {% endif %}
+
+    {% if post_list.number|add:'-3' > 1 %}
+        <li class="page-item"><a class="page-link" href="?page={{ post_list.number|add:'-4' }}">...</a></li>
+    {% endif %}
+
+
+
+    {% for page in post_list.paginator.page_range %}
+        {% if page == post_list.number %}
+            <li class="page-item active"><a class="page-link" href="?{% if request.GET.q %}q={{ request.GET.q }}&{% endif %}page={{ page }}">{{page}}</a></li>
+        {% elif page > post_list.number|add:'-4' and page < post_list.number|add:'4' %}
+            <li class="page-item"><a class="page-link" href="?{% if request.GET.q %}q={{ request.GET.q }}&{% endif %}page={{ page }}">{{page}}</a></li>
+        {% endif %}
+    {% endfor %}
+
+    {% if post_list.paginator.num_pages > post_list.number|add:'3' %}
+    <li class="page-item"><a class="page-link" href="?page={{ post_list.number|add:'4' }}">...</a></li>
+    {% endif %}
+
+    {% if post_list.has_next %}
+        <li class="page-item"><a class="page-link" href="?{% if request.GET.q %}q={{ request.GET.q }}&{% endif %}page={{ post_list.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
+    {% endif %}
+</ul>
+<!-- end: Pagination -->

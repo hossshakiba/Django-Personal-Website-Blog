@@ -1,0 +1,22 @@
+                            <!-- Post item-->
+                            <div class="post-item border">
+                                <div class="post-item-wrap">
+                                    <div class="post-image">
+                                        <a href="{{post.get_absolute_url}}">
+                                            <img alt="{{post.title}}" src="{{post.image.url}}" height="235" width="351">
+                                        </a>
+                                        <span class="post-meta-category"><a href="/blog/{{post.categories.first.name}}">{{post.categories.first}}</a></span>
+                                    </div>
+                                    <div class="post-item-description">
+                                        <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{post.publish.date}}</span>
+                                        <span class="post-meta-comments"><i class="fa fa-comments-o"></i>{{post.comments.count}} comment{{ post.comments.count|pluralize }}</span>
+                                        <h2><a href="{{post.get_absolute_url}}">{{post.title}}
+                                            </a></h2>
+                                        <p>{{ post.body |truncatewords:14 |safe }}</p>
+
+                                        <a href="{{post.get_absolute_url}}" class="item-link">Read More <i class="fa fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: Post item-->

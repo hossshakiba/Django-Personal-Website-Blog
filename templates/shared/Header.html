@@ -1,0 +1,38 @@
+  <!-- Header -->
+        <header id="header" class="dark submenu-light" {% if request.path == '/' %} data-transparent="true" {% endif %}>
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo"> <a href="/"><span class="logo-default">HOSS</span><span class="logo-dark">HOSS</span></a> </div>
+                    <!--End: Logo-->
+                    
+                    {% include 'shared/search_posts_component.html' %}
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                            <li> <a id="btn-search" href="#"> <i class="icon-search"></i></a> </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="/">HOME</a></li>
+                                    <li><a href="/blog">BLOG</a></li>
+                                    <li><a href="/resume">resume</a></li>
+                                    <li><a href="/#contactme">contact me</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+

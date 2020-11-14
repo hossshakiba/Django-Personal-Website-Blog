@@ -1,0 +1,23 @@
+
+{% url 'category_name' as category_url %}
+     
+     
+     <!-- Page Menu -->
+        <div class="page-menu menu-outline style-1">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="{% if request.path == '/blog' %} active {% endif %}"><a href="/blog">Show All</a></li>
+                        {% for category in categories %}
+                            <li><a  href="/blog/{{category.name}}">{{category.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+
+                <div id="pageMenu-trigger">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+<!-- end: Page Menu -->
+

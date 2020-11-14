@@ -1,0 +1,251 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+            <!-- Page Content -->
+        <section id="page-content" class="sidebar-right">
+            <div class="container">
+                <div class="row">
+                    <!-- content -->
+                    <div class="content col-lg-9">
+                        <!-- Blog -->
+                        <div id="blog" class="single-post">
+                            <!-- Post single item-->
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+                                    <div class="post-image">
+                                        
+                                            <img alt="" src="{{post.image.url}}">
+                                        
+                                    </div>
+                                    <div class="post-item-description">
+                                        <h2>{{post.title}}</h2>
+                                        <div class="post-meta">
+                                            <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{post.publish.date}}</span>                                            
+                                            <span class="post-meta-comments"><a class ="mobileHide" href="#comments"><i class="fa fa-comments-o"></i>{{comments.count}} comment{{ comments|pluralize }}</a></span>
+                                            <span class="post-meta-category"><a href=""><i class="fa fa-tag"></i>{{post.categories.all|join:", "}}</a></span>
+                                            <div class="post-meta-share">
+                                                <a class="btn btn-xs btn-slide btn-twitter" href="tg://msg_url?url=https://hossshakiba.com{{post.get_absolute_url}}&amp;text=Check out this Article!" data-width="150">
+                                                    <i class="fab fa-telegram-plane">
+                                                    </i><span>Share on Telegram</span>
+                                                </a>
+                                                
+                                                <a target="blank_" class="btn btn-xs btn-slide btn-googleplus" href="mailto:?subject={{post.categories.first}} article for you&amp;body=Check out this Article :%0A%0A{{post.title}}%0A%0Ahttps%3A//hossshakiba.com{{post.get_absolute_url}}" data-width="125">
+                                                    <i class="icon-mail"></i>
+                                                    <span>Share via Email</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% comment %} <div class="blockquote">
+                                            <p>The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.</p>
+                                            <small>by <cite>Albert Einstein</cite></small>
+                                        </div> {% endcomment %}
+                                        <p> {{post.body |safe}}</p>
+                                    </div>
+                                    <div class="post-tags">
+                                        {% for tag in post.tags.all %}      
+                                            <a href="/tag/{{tag.slug}}">{{tag.name}}</a>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="post-navigation">
+                                        {% if post.get_previous_by_created %}
+                                            <a href="{{post.get_previous_by_publish.get_absolute_url}}" class="post-prev">
+                                                <div class="post-prev-title"><span>Previous Post</span>{{post.get_previous_by_publish.title}}</div>
+                                            </a>
+                                        {% endif %}
+                                            <a href="/blog" class="post-all">
+                                                <i class="icon-grid"> </i>
+                                            </a>
+                                        {% if post.get_next_by_created %}
+                                            <a href="{{post.get_next_by_publish.get_absolute_url}}" class="post-next">
+                                                <div class="post-next-title"><span>Next Post</span>{{post.get_next_by_publish.title}}</div>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                    <!-- Comments -->
+                                    <div class="comments" id="comments">
+                                        {% with comments.count as total_comments %}
+                                            <div class="comment_number">
+                                            <span>{{total_comments}}</span> comment{{ total_comments|pluralize }}
+                                        </div>
+                                        {% endwith %}
+                                        <div class="comment-list">
+                                            {% for comment in comments %}
+                                                <!-- Comment -->
+                                                <div class="comment" id="comments">
+                                                    <div class="image"><img alt="" src="{% static 'images/user-avatar.png' %}" class="avatar"></div>
+                                                    <div class="text">
+                                                        <h5 class="name">{{comment.name}}</h5>
+                                                        <span class="comment_date"><i class="icon-clock"></i> {{comment.created}}</span>
+                                                        {% comment %} <a class="comment-reply-link" href="">Reply</a> {% endcomment %}
+                                                                                                <!-- end: Comments -->
+                                                        <div class="text_holder">
+                                                            <p>{{comment.body|linebreaks}}</p>
+                                                        </div>
+                                                    </div>
+  
+                                                </div>
+
+                                            {% empty %}
+                                                <p>There are no comments yet.</p>
+                                                <!-- end: Comment -->
+                                            {% endfor %}
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    {% comment %} {{ form.media }}
+                                    {{ form.body }} {% endcomment %}
+                                           
+                                    <!-- end: Comments -->
+                                    <div class="respond-form" id="respond" action="">
+                                        <div class="respond-comment">
+                                            Leave a <span>Comment</span></div>
+                                        <form class="form-gray-fields" method="post">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label class="upper" for="name">Name</label>
+                                                        {{comment_form.name}}
+                                                        {% for error in comment_form.name.errors %}
+                                                            <p class="text-danger">{{error}}</p>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <label class="upper" for="email">Email</label>
+                                                        {{comment_form.email}}
+                                                        {% for error in comment_form.email.errors %}
+                                                            <p class="text-danger">{{error}}</p>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="upper" for="comment">Your comment</label>
+                                                        {{comment_form.body}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="form-group text-center">
+                                                        <button class="btn" type="submit">Submit Comment</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end: Post single item-->
+                        </div>
+                    </div>
+                    <!-- end: content -->
+                    <!-- Sidebar-->
+                    <div class="sidebar sticky-sidebar col-lg-3">
+                        <!--widget newsletter-->
+                        <div class="widget  widget-newsletter">
+                            <form id="widget-search-form-sidebar" action="/blog/search/" method="get">
+						<div class="input-group">
+						  <input type="text" aria-required="true" name="q" class="form-control widget-search-form" placeholder="Search for pages..." value="{{request.GET.q}}">
+						  <div class="input-group-append">
+							<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+						  </div>
+						</div>
+					</form></div>
+                        <!--end: widget newsletter-->
+                        <!--Tabs with Posts-->
+                        <div class="widget">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs" id="tabs-posts" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#related" role="tab" aria-controls="related" aria-selected="true">Related</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#featured" role="tab" aria-controls="featured" aria-selected="false">Featured</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="recent" aria-selected="false">Recent</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="tabs-posts-content">
+                                    <div class="tab-pane fade show active" id="related" role="tabpanel" aria-labelledby="popular-tab">
+                                        <div class="post-thumbnail-list">
+                                            {% for post in related_posts %}
+                                                <div class="post-thumbnail-entry col-lg-12">
+                                                    <img alt="" src="{{post.image.url}}">
+                                                    <div class="post-thumbnail-content">
+                                                        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+                                                        <span class="post-date"><i class="icon-clock"></i>{{post.whenpublished}} ago</span>
+                                                        <div><span class="post-category"><i class="fa fa-tag"></i>{{post.categories.first}}</span></div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="featured-tab">
+                                        <div class="post-thumbnail-list">
+                                            {% for post in featured_posts %}
+                                                <div class="post-thumbnail-entry col-lg-12">
+                                                    <img alt="" src="{{post.image.url}}">
+                                                    <div class="post-thumbnail-content">
+                                                        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+                                                        <span class="post-date"><i class="icon-clock"></i>{{post.whenpublished}} ago</span>
+                                                        <div><span class="post-category"><i class="fa fa-tag"></i>{{post.categories.first}}</span></div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+                                        <div class="post-thumbnail-list">
+                                            {% for post in recent_posts %}
+                                                <div class="post-thumbnail-entry col-lg-12">
+                                                    <img alt="" src="{{post.image.url}}">
+                                                    <div class="post-thumbnail-content">
+                                                        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+                                                        <span class="post-date"><i class="icon-clock"></i>{{post.whenpublished}} ago</span>
+                                                        <div><span class="post-category"><i class="fa fa-tag"></i>{{post.categories.first}}</span></div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--widget tags -->
+                        <div class="widget  widget-tags">
+                            <h4 class="widget-title">Categories</h4>
+                            <div class="tags">
+                            {% for category in categories %}
+                                <a href="/blog/{{category.name}}">{{category.title}}</a>
+                            {% endfor %}
+                                
+                            </div>
+                        </div>
+                        <div class="widget  widget-tags">
+                            <h4 class="widget-title">Tags</h4>
+                            <div class="tags">
+                            {% for tag in tags %}
+                                <a href="/tag/{{tag.slug}}">{{tag.name}}</a>
+                            {% endfor %}
+                                
+                            </div>
+                        </div>
+                        <!--end: widget tags -->
+                    </div>
+                    <!-- end: Sidebar-->
+                </div>
+            </div>
+        </section>
+        <!-- end: Page Content -->
+        <!-- Footer -->
+{% endblock content %}

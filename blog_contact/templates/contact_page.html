@@ -1,0 +1,95 @@
+    
+{% load static %}
+                <!-- Contact -->
+        <section id="contactme" class="p-t-150 p-b-200" style="background-image:url({% static 'homepages/branding/images/background-4.png' %}); background-position:71% 22%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading-text heading-section">
+                                    <h2>Get in Touch with Me</h2>
+                                    <p class="lead">I'll get back to you ASAP!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 m-b-30">
+                              
+                                    <strong>Location:</strong>
+                                    Hamedan, Iran.<br>
+                                
+                                <strong>Phone:</strong> {{ personal_info.phone }}
+                                <br>
+                                
+                                <strong>Email:</strong> {{personal_info.email}}
+                            </div>
+                            <div class="col-lg-12 m-b-30">
+                                <h4>Social networks</h4>
+                                <div class="social-icons  social-icons-colored">
+                                    <ul>
+                            
+                                        <li class="social-linkedin"><a target="_blank" href="{{ personal_info.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="social-youtube"><a target="_blank" href="{{personal_info.youtube}}"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="social-github"><a target="_blank" href="{{personal_info.github}}"><i class="fab fa-github"></i></a></li>
+                                        <li class="social-instagram"><a target="_blank" href="{{personal_info.instagram}}"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="social-twitter"><a target="_blank" href="{{personal_info.telegram}}"><i class="fab fa-telegram-plane"></i></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5 offset-1">
+                        <form  role="form" method="post" action="">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    
+                                    <label for="name">Full name</label>
+                                        {{ contact_form.fullname }}
+                                        {% for error in contact_form.fullname.errors %}
+                                            <p class="text-danger">{{error}}</p>
+                                        {% endfor %}                                
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                        {{ contact_form.email }}
+                                        {% for error in contact_form.email.errors %}
+                                            <p class="text-danger">{{error}}</p>
+                                        {% endfor %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label class="upper" for="phone">Phone</label>
+                                        {{ contact_form.phone }}
+                                        {% for error in contact_form.phone.errors %}
+                                            <p class="text-danger">{{error}}</p>
+                                        {% endfor %}                                
+                                </div>
+
+                                <div class="form-group col-lg-6">
+                                    <label class="upper" for="phone">Subject</label>
+                                    {{ contact_form.subject }}
+                                        {% for error in contact_form.subject.errors %}
+                                            <p class="text-danger">{{error}}</p>
+                                        {% endfor %}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                    {{ contact_form.text }}
+                                    {% for error in contact_form.text.errors %}
+                                        <p class="text-danger">{{error}}</p>
+                                    {% endfor %}
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-light" name="contact" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i> Send message</button>
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <!-- end: Contact -->                  
+                    

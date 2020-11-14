@@ -1,0 +1,178 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+
+        <section id="section2">
+            <div class="container">
+
+                <div class="heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-lg-16">
+                        <img src="{{personal_info.image.url}}" class="avatar avatar-lg" style="margin-top: -40px;">
+                        </div>
+                    <div class="col-lg-10">
+                        <h3>I'm Hossein Shakiba</h3> 
+                        <p class="m-b-0">Born on jan. 11, 2001</p>
+                        
+                        <p>{{personal_info.about}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<hr>
+        <!-- EDUCATION -->
+        <section id="section2">
+            <div class="container">
+
+                <div class="heading">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 border-right">
+                        <h3>High school</h3>
+                        <h4 class="m-b-0">Madani School</h4>
+                        <p>2016 - 2019</p>
+                        <p>Student of the year for three years in a row</p>
+                    </div>
+                    <div class="col-lg-3 border-right">
+                        <h3>Bachelor's Degree</h3>
+                        <h4 class="m-b-0">Bu-Ali Sina University</h4>
+                        <p>Since 2019</p>
+                        {% comment %} <p>Student of the year award in 2015</p> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- end: EDUCATION -->
+        {% comment %} <section class="background-white">
+            <div class="container">
+             <div class="heading">
+                            <h2>Skills</h2>
+                        </div>
+                <div class="row carousel-description-clients carousel-description-style ">
+                    <div class="col-lg-12">
+                        <div class="carousel client-logos" data-items="5">
+
+                            <div>
+                                <img alt="" src="{% static 'images/python.png'%}" >
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/django.png'%}" style="width:280px; height:200px;margin-top:-18px;margin-left: -45px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/csharp.png'%}" style="margin-left: 20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/c.png'%}" style="width:160px; height:160px;margin-left: 20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/html.png'%}" style="height: 150px;margin-top: -8px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/css.png'%}" style="height: 157px;margin-top: -10px;width: 153px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/regex.jpg'%}" style="width: 200px;margin-top: 13px;margin-left: -20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/sqlite.png'%}" style="width:180; margin-top: 35px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/mysql.png'%}" style="width:250; margin-top: 20px;">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> {% endcomment %}
+                    <!--Medium size progress bar-->
+        <section>
+            <div class="container">
+                <div class="heading">
+                            <h2>Skills</h2>
+                        </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="75" data-delay="100" data-type="%">
+                                <div class="progress-title">PYTHON</div>
+                            </div>
+                        </div>  
+                         <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="50" data-delay="200" data-type="%">
+                                <div class="progress-title">DJANGO</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="50" data-delay="300" data-type="%">
+                                <div class="progress-title">CSHARP</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="60" data-delay="400" data-type="%">
+                                <div class="progress-title">C</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="60" data-delay="500" data-type="%">
+                                <div class="progress-title">MYSQL</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="55" data-delay="600" data-type="%">
+                                <div class="progress-title">SQLITE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-progress-bar-container radius medium title-up">
+                            <div class="p-progress-bar" data-percent="60" data-delay="1000" data-type="%">
+                                <div class="progress-title">HTML5</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container radius medium title-up">
+                            <div class="p-progress-bar" data-percent="55" data-delay="1100" data-type="%">
+                                <div class="progress-title">CSS3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   <!--END: Medium size progress bar-->
+        <hr>
+        <!-- CV -->
+        <section id="section4">
+
+            <div class="container">
+                <div class="heading">
+                    <h2>CV</h2>
+                    {% comment %} <span class="lead">I love to put mysel.</span> {% endcomment %}
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 border-right">
+                        <h3>Self Employed</h3>
+                        <h4 class="m-b-0">Web-Developer</h4>
+                        <p>Since 2020</p>
+                        <p>I've always loved working on projects that challenge my knowlede and make me learn new things.
+                        </p>
+
+                        {% comment %} <div class="seperator"></div>
+
+                        <h3>COMPANY NAME</h3>
+                        <h4 class="m-b-0">Job Position</h4>
+                        <p>April 2006 - May 2007</p>
+                        <p> The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor. Ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis.
+                        </p>
+                        <div class="seperator"></div> {% endcomment %}
+                </div>
+            </div>
+        </section>
+        <!-- end: CV -->
+{% endblock content %}
