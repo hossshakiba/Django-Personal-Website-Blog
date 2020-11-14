@@ -11,11 +11,10 @@ from blog_info.models import PersonalInfo
 from blog_blog.forms import PostForm
 
 
-# Create your views here.
 def blog_paginator(request, posts, page_number):
 
     categories = PostCategory.objects.all()
-    paginator = Paginator(posts, page_number)  # 9 posts in each page
+    paginator = Paginator(posts, page_number)  # posts in each page
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
@@ -26,12 +25,12 @@ def blog_paginator(request, posts, page_number):
         # If page is out of range deliver last page of results
         post_list = paginator.page(paginator.num_pages)
 
-    res = dict()
-    res['page'] = page
-    res['post_list'] = post_list
-    res['paginator'] = paginator
-    res['categories'] = categories
-    
+    res = {
+        'page': page,
+        'post_list': post_list,
+        'paginator': paginator,
+        'categories': categories
+    }
     return  res
     
 
