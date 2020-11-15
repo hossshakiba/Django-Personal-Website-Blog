@@ -10,5 +10,30 @@ You can make your posts look prettier and more professional, using a powerful ri
 You can write a short bio about yourself on resume page and make others aware of your skills and experiences.
 ## contact-me
 People can make contact with you and also hire you as a develper.
+## Installation
+There are a few steps to take before running the website on your localhost :
+<ul style="line-height:180%">
+  <li>Clone the repository</li>
+  <li>Create a database</li>
+  <li>Run the project on localhost</li>
+</ul>
+<br>
+### Clone the repository
+Open Terminal or Commandline
+<br>
+```bash
+pip install foobar
+```
+### Create a database
+Then it's time to push the tables into a database.
+'''bash
+python manage.py migrate
+'''
+### Run the project on localhost
+Finally, you can run the website on your localhost
+'''bash
+python manage.py runserver
+'''
+<br>
 ## Contributions
 There is much more to be done. All contributions are highly welcomed.
