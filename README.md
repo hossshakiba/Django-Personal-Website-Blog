@@ -9,7 +9,7 @@ You can make your posts look prettier and more professional, using a powerful ri
 ## Resume
 You can write a short bio about yourself on resume page and make others aware of your skills and experiences.
 ## contact-me
-People can make contact with you and also hire you as a develper..
+People can make contact with you and also hire you as a develper.
 
 ## Installation
 There are a few steps to take before running the website on your localhost :
@@ -23,7 +23,7 @@ There are a few steps to take before running the website on your localhost :
 ### Clone the repository
 
 ```bash
-git clone 
+git clone https://github.com/hossshakiba/Django-Personal-Website-Blog.git
 ```
 ### Create a database
 
