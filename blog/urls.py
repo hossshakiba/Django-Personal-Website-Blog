@@ -27,9 +27,6 @@ urlpatterns = [
     path('header', header, name='header'),
     path('footer', footer, name='footer'),
     path('admin/', admin.site.urls),
-    re_path(r'^tinymce/', include('tinymce.urls')),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
