@@ -13,7 +13,7 @@ python-card-me==0.9.3
 python-dateutil==2.8.1
 pytz==2020.1
 six==1.15.0
-sorl-thumbnail==12.6.3
 sqlparse==0.3.1
+sorl-thumbnail==12.6.3
 surlex==0.2.0
-unicodecsv==0.14.1
+unicodecsv==0.14.1 
