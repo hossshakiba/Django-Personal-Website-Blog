@@ -1,0 +1,17 @@
+.font-pacifico,
+.font-pacifico a,
+.font-pacifico h1,
+.font-pacifico h2,
+.font-pacifico h3,
+.font-pacifico h4,
+.font-pacifico h5,
+.font-pacifico h6,
+h1.font-pacifico,
+h2.font-pacifico,
+h3.font-pacifico,
+h4.font-pacifico,
+h5.font-pacifico,
+h6.font-pacifico {
+	font-family: 'Pacifico', cursive !important;
+	letter-spacing:2px;
+}

@@ -1,0 +1,512 @@
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+a:not(.btn).link {
+  color: #2250fc; }
+a:not(.btn):hover, a:not(.btn):focus, a:not(.btn):active {
+  color: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Accordion
+-----------------------------------------------------------------*/
+.accordion.accordion-theme .ac-item {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Blockquotes
+-----------------------------------------------------------------*/
+.blockquote {
+  border-left: 3px solid #2250fc; }
+
+.blockquote-color {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Buttons
+-------------------------------------------------------------------------*/
+a.btn:not([href]):not([tabindex]),
+.btn {
+  background-color: #2250fc;
+  border-color: #2250fc; }
+  a.btn:not([href]):not([tabindex]):hover, a.btn:not([href]):not([tabindex]):focus, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled).active,
+  .btn:hover,
+  .btn:focus,
+  .btn:not(:disabled):not(.disabled):active,
+  .btn:not(:disabled):not(.disabled).active {
+    background-color: #2250fc;
+    border-color: #2250fc; }
+  a.btn:not([href]):not([tabindex]).btn-outline,
+  .btn.btn-outline {
+    border-color: #2250fc;
+    color: #2250fc; }
+    a.btn:not([href]):not([tabindex]).btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-outline:active, a.btn:not([href]):not([tabindex]).btn-outline.active,
+    .btn.btn-outline:hover,
+    .btn.btn-outline:focus,
+    .btn.btn-outline:active,
+    .btn.btn-outline.active {
+      background-color: #2250fc;
+      border-color: #2250fc; }
+  a.btn:not([href]):not([tabindex]).btn-primary,
+  .btn.btn-primary {
+    background-color: #2250fc;
+    border-color: #2250fc; }
+    a.btn:not([href]):not([tabindex]).btn-primary:hover, a.btn:not([href]):not([tabindex]).btn-primary:focus, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]).btn-primary:not(:disabled):not(.disabled).active,
+    .btn.btn-primary:hover,
+    .btn.btn-primary:focus,
+    .btn.btn-primary:not(:disabled):not(.disabled):active,
+    .btn.btn-primary:not(:disabled):not(.disabled).active {
+      background-color: #2250fc;
+      border-color: #2250fc; }
+  a.btn:not([href]):not([tabindex]).btn-icon-holder.btn-outline:before,
+  .btn.btn-icon-holder.btn-outline:before {
+    border-left-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+    call-to-action (call to action)
+-------------------------------------------------------------------------*/
+.call-to-action.call-to-action-colored {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+Carousels & Slider
+-----------------------------------------------------------------*/
+.inspiro-slider .flickity-button:hover {
+  background-color: #2250fc; }
+
+.carousel .flickity-button:hover {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+    Dropcat & Highlight
+-----------------------------------------------------------------*/
+.dropcap.dropcap-colored {
+  background-color: #2250fc; }
+
+.highlight.highlight-colored {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+Forms
+-------------------------------------------------------------------------*/
+.form-control:focus,
+input:focus,
+select:focus {
+  border-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Headings
+-------------------------------------------------------------------------*/
+.heading-text.heading-section > h2:before {
+  background-color: #2250fc; }
+
+.heading-creative strong {
+  color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Icon Box
+-------------------------------------------------------------------------*/
+.icon-box.effect.dark .icon i:after {
+  box-shado: 0 0 0 3px #2250fc; }
+.icon-box.effect.dark .icon i:hover, .icon-box.effect.dark:hover .icon i {
+  background-color: #2250fc; }
+
+.text-box.text-box-light:hover {
+  background: #2250fc; }
+
+.feature-box:hover h2,
+.feature-box:hover h3,
+.feature-box:hover h4 {
+  color: #2250fc; }
+
+/* ----------------------------------------------------------------
+Lables & Badgets
+-----------------------------------------------------------------*/
+.badge-primary {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Light Box
+-------------------------------------------------------------------------*/
+.mfp-ajax-holder .mfp-close:hover {
+  background: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Lists & Bullet Lists
+-------------------------------------------------------------------------*/
+.list-colored li a {
+  color: #2250fc; }
+
+.list-legend li span {
+  background-color: #2250fc; }
+
+.list-icon.list-icon-colored li:before, .list-icon.icon-list-colored i {
+  color: #2250fc; }
+
+.list-group-item.active {
+  background-color: #2250fc;
+  border: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Pagination & Pager
+-------------------------------------------------------------------------*/
+.post-navigation a:hover {
+  color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Pricing Table
+-------------------------------------------------------------------------*/
+.pricing-table.colored .plan-header {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------------
+	Progress Bar
+-------------------------------------------------------------------------*/
+.p-progress-bar,
+.progress-bar {
+  background-color: #2250fc; }
+
+/*--------------------------------------------------------
+     Tabs
+---------------------------------------------------------*/
+.tabs .nav-tabs .nav-link.active {
+  color: #2250fc;
+  border-bottom: 2px solid #2250fc; }
+.tabs.tabs-vertical .nav-link.active {
+  color: #2250fc;
+  border-right: 2px solid #2250fc; }
+
+/* ----------------------------------------------------------------
+	Date picker
+-----------------------------------------------------------------*/
+.datepicker tbody tr > td.day.today.active, .datepicker tbody tr > td.day.active, .datepicker tbody tr > td.day.selected {
+  background: #2250fc !important; }
+  .datepicker tbody tr > td.day.today.active:hover, .datepicker tbody tr > td.day.active:hover, .datepicker tbody tr > td.day.selected:hover {
+    background: #2250fc; }
+.datepicker tbody tr > td.day.range.today {
+  background: #2250fc; }
+.datepicker tbody tr > td span.month.active {
+  background: #2250fc; }
+  .datepicker tbody tr > td span.month.active:hover {
+    background: #2250fc; }
+
+.datetimepicker tbody tr > td.day.today,
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.disabled:hover.active,
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.disabled:hover.active {
+  background: #2250fc !important; }
+
+.datetimepicker table tr > td.today:hover,
+.datetimepicker table tr > td.today:hover:hover,
+.datetimepicker table tr > td.today.disabled:hover,
+.datetimepicker table tr > td.today.disabled:hover:hover,
+.datetimepicker table tr > td.today:active,
+.datetimepicker table tr > td.today:hover:active,
+.datetimepicker table tr > td.today.disabled:active,
+.datetimepicker table tr > td.today.disabled:hover:active,
+.datetimepicker table tr > td.today.active,
+.datetimepicker table tr > td.today:hover.active,
+.datetimepicker table tr > td.today.disabled.active,
+.datetimepicker table tr > td.today.disabled:hover.active,
+.datetimepicker table tr > td.today.disabled,
+.datetimepicker table tr > td.today:hover.disabled,
+.datetimepicker table tr > td.today.disabled.disabled,
+.datetimepicker table tr > td.today.disabled:hover.disabled,
+.datetimepicker table tr > td.today[disabled],
+.datetimepicker table tr > td.today:hover[disabled],
+.datetimepicker table tr > td.today.disabled[disabled],
+.datetimepicker table tr > td.today.disabled:hover[disabled] {
+  background: #2250fc !important; }
+
+.daterangepicker .daterangepicker_input .input-mini.active, .daterangepicker .daterangepicker_input .input-mini:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker tbody td.today {
+  background: #2250fc; }
+.daterangepicker tbody td.active, .daterangepicker tbody td.in-range, .daterangepicker tbody td.active:hover, .daterangepicker tbody td.in-range:hover {
+  background: #2250fc; }
+.daterangepicker select.ampmselect.active, .daterangepicker select.ampmselect:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker select.hourselect.active, .daterangepicker select.hourselect:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker select.minuteselect.active, .daterangepicker select.minuteselect:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker select.monthselect.active, .daterangepicker select.monthselect:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker select.yearselect.active, .daterangepicker select.yearselect:focus {
+  border: 1px solid #2250fc; }
+.daterangepicker .calendar-time i {
+  color: #b2b1c5; }
+.daterangepicker .ranges li.active {
+  background: #2250fc;
+  border: 1px solid #2250fc; }
+
+/* ----------------------------------------------------------------
+	Date range picker
+-----------------------------------------------------------------*/
+.daterangepicker td.active:not(.off),
+.daterangepicker td.active:hover,
+.daterangepicker .active.end-date.in-range {
+  background: #2250fc !important; }
+
+input.daterange:after,
+input.dates:after {
+  background: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Bootstrap Switch
+-----------------------------------------------------------------*/
+.bootstrap-switch .bootstrap-switch-on,
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  background-color: #2250fc;
+  border-color: #2250fc; }
+
+.p-radio:checked + .p-radio-style:before {
+  border: 1px solid #2250fc;
+  background: #2250fc; }
+
+.p-checkbox:checked + .p-checkbox-style:before {
+  border: #2250fc;
+  background: #2250fc; }
+
+.p-switch > input[type="checkbox"]:checked + .p-switch-style {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Ion Range Sliders
+-----------------------------------------------------------------*/
+.irs-bar {
+  background: #2250fc; }
+
+.irs-from,
+.irs-to,
+.irs-single {
+  background: #2250fc; }
+
+.irs-from:after,
+.irs-to:after,
+.irs-single:after {
+  border-top-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+.post-item {
+  /*Types*/ }
+  .post-item .post-image .post-meta-category,
+  .post-item .post-slider .post-meta-category,
+  .post-item .post-video .post-meta-category,
+  .post-item .post-audio .post-meta-category,
+  .post-item .post-quote-img .post-meta-category {
+    background-color: #2250fc; }
+  .post-item .post-quote-img .post-meta-category {
+    color: #2250fc; }
+    .post-item .post-quote-img .post-meta-category a {
+      color: #2250fc; }
+  .post-item.quote .post-item-wrap {
+    background-color: #2250fc; }
+
+.post-author a {
+  color: #2250fc; }
+
+/* ----------------------------------------------------------------
+	Grid Filter
+-----------------------------------------------------------------*/
+.grid-filter li:hover a, .grid-filter li.active a {
+  background-color: #2250fc; }
+.grid-filter.gf-outline li:hover a, .grid-filter.gf-outline li.active a {
+  border-color: #2250fc;
+  color: #2250fc; }
+.grid-filter.gf-lines li:hover a, .grid-filter.gf-lines li.active a {
+  color: #2250fc; }
+  .grid-filter.gf-lines li:hover a:after, .grid-filter.gf-lines li.active a:after {
+    background-color: #2250fc; }
+.grid-filter.gf-classic li:hover a, .grid-filter.gf-classic li.active a {
+  background-color: #2250fc; }
+.grid-filter.gf-default li:hover a, .grid-filter.gf-default li.active a {
+  color: #2250fc; }
+
+/*------------------------------------------------------
+     Comments
+------------------------------------------------------*/
+.comments .comment_number span {
+  color: #2250fc; }
+
+.respond-comment span {
+  color: #2250fc; }
+
+/*------------------------------------------------------
+     Extras
+------------------------------------------------------*/
+.item-link {
+  color: #2250fc; }
+  .item-link:hover {
+    color: #2250fc; }
+
+.nav-link {
+  color: #2250fc; }
+
+.background-colored {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+Scroll top
+-----------------------------------------------------------------*/
+#scrollTop:after, #scrollTop:before {
+  background-color: #2250fc; }
+
+.fc-event-primary.fc-event {
+  background-color: #2250fc;
+  border-color: #2250fc; }
+
+.icon-set-container .row > [class^="col-"] {
+  color: #2250fc; }
+  .icon-set-container .row > [class^="col-"]:hover {
+    background-color: #2250fc; }
+    .icon-set-container .row > [class^="col-"]:hover .icon-holder {
+      color: #2250fc; }
+
+/* ----------------------------------------------------------------
+    Forum
+-----------------------------------------------------------------*/
+.forum thead tr > th {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+    Header
+-----------------------------------------------------------------*/
+#header {
+    /* ----------------------------------------------------------------
+Main Menu
+-----------------------------------------------------------------*/ }
+  #header.header-modern:not(.header-active).header-colored .header-inner,
+  #header.header-modern:not(.header-active).header-colored #header-wrap {
+    background-color: #2250fc; }
+  #header.header-colored .header-inner,
+  #header.header-colored #header-wrap {
+    background-color: #2250fc; }
+  #header #mainMenu nav > ul > li.hover-active > a,
+  #header #mainMenu nav > ul > li.hover-active > span, #header #mainMenu nav > ul > li.current > a,
+  #header #mainMenu nav > ul > li.current > span, #header #mainMenu nav > ul > li:hover > a,
+  #header #mainMenu nav > ul > li:hover > span, #header #mainMenu nav > ul > li:focus > a,
+  #header #mainMenu nav > ul > li:focus > span {
+    color: #2250fc; }
+  #header #mainMenu nav > ul > li .dropdown-menu > li > a:focus, #header #mainMenu nav > ul > li .dropdown-menu > li > a:hover, #header #mainMenu nav > ul > li .dropdown-menu > li > a:active,
+  #header #mainMenu nav > ul > li .dropdown-menu > li > span:focus,
+  #header #mainMenu nav > ul > li .dropdown-menu > li > span:hover,
+  #header #mainMenu nav > ul > li .dropdown-menu > li > span:active,
+  #header #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:focus,
+  #header #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:hover,
+  #header #mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:active {
+    color: #2250fc; }
+  #header #mainMenu nav > ul > li .dropdown-menu > li.current > a,
+  #header #mainMenu nav > ul > li .dropdown-menu > li.current > span, #header #mainMenu nav > ul > li .dropdown-menu > li:hover > a,
+  #header #mainMenu nav > ul > li .dropdown-menu > li:hover > span, #header #mainMenu nav > ul > li .dropdown-menu > li:focus > a,
+  #header #mainMenu nav > ul > li .dropdown-menu > li:focus > span, #header #mainMenu nav > ul > li .dropdown-menu > li:active > a,
+  #header #mainMenu nav > ul > li .dropdown-menu > li:active > span, #header #mainMenu nav > ul > li .dropdown-menu > li.hover-active > a,
+  #header #mainMenu nav > ul > li .dropdown-menu > li.hover-active > span {
+    color: #2250fc; }
+  #header #mainMenu.menu-rounded nav > ul > li.current > a, #header #mainMenu.menu-rounded nav > ul > li:hover > a, #header #mainMenu.menu-rounded nav > ul > li:focus > a {
+    background-color: #2250fc; }
+  #header #mainMenu.menu-outline nav > ul > li.current > a, #header #mainMenu.menu-outline nav > ul > li:hover > a, #header #mainMenu.menu-outline nav > ul > li:focus > a {
+    color: #2250fc;
+    border-color: #2250fc; }
+  #header #mainMenu.menu-lines nav > ul > li.current > a, #header #mainMenu.menu-lines nav > ul > li:hover > a, #header #mainMenu.menu-lines nav > ul > li:focus > a {
+    color: #2250fc; }
+    #header #mainMenu.menu-lines nav > ul > li.current > a:after, #header #mainMenu.menu-lines nav > ul > li:hover > a:after, #header #mainMenu.menu-lines nav > ul > li:focus > a:after {
+      background-color: #2250fc; }
+  #header #mainMenu.menu-hover-background nav > ul > li.current, #header #mainMenu.menu-hover-background nav > ul > li:hover, #header #mainMenu.menu-hover-background nav > ul > li:focus {
+    background-color: #2250fc; }
+  #header #shopping-cart > a .shopping-cart-items {
+    background: #2250fc; }
+
+/* ----------------------------------------------------------------
+Dots Menu
+-----------------------------------------------------------------*/
+#dotsMenu ul li:hover {
+  background-color: #2250fc; }
+#dotsMenu ul li.current {
+  background-color: #2250fc; }
+#dotsMenu ul li a:hover:before, #dotsMenu ul li a.active:before {
+  background-color: #2250fc; }
+
+/*Menu Dark*/
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li .dropdown-menu > li > a:hover,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li .dropdown-menu > li > span:hover,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a:hover {
+  color: #2250fc; }
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li.current > a,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li.current > span, #mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li:hover > a,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li:hover > span, #mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li:focus > a,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li:focus > span, #mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li.hover-active > a,
+#mainMenu.dark:not(.light):not(.menu-rounded) nav > ul > li.hover-active > span {
+  color: #2250fc; }
+
+.page-menu nav > ul > li:hover > a, .page-menu nav > ul > li.active > a {
+  color: #2250fc; }
+.page-menu.menu-rounded nav > ul > li:hover > a, .page-menu.menu-rounded nav > ul > li.active > a {
+  background-color: #2250fc; }
+.page-menu.menu-outline nav > ul > li:hover > a, .page-menu.menu-outline nav > ul > li.active > a {
+  border-color: #2250fc;
+  color: #2250fc; }
+.page-menu.menu-lines nav > ul > li:hover > a, .page-menu.menu-lines nav > ul > li.active > a {
+  color: #2250fc; }
+  .page-menu.menu-lines nav > ul > li:hover > a:after, .page-menu.menu-lines nav > ul > li.active > a:after {
+    background-color: #2250fc; }
+.page-menu.menu-solid nav > ul > li:hover > a, .page-menu.menu-solid nav > ul > li.active > a {
+  background-color: #2250fc; }
+
+@media (max-width: 1024px) {
+  .page-menu.menu-rounded nav > ul > li:hover > a, .page-menu.menu-rounded nav > ul > li.active > a, .page-menu.menu-outline nav > ul > li:hover > a, .page-menu.menu-outline nav > ul > li.active > a, .page-menu.menu-lines nav > ul > li:hover > a, .page-menu.menu-lines nav > ul > li.active > a, .page-menu.menu-solid nav > ul > li:hover > a, .page-menu.menu-solid nav > ul > li.active > a, .page-menu.menu-light nav > ul > li:hover > a, .page-menu.menu-light nav > ul > li.active > a, .page-menu.menu-creative nav > ul > li:hover > a, .page-menu.menu-creative nav > ul > li.active > a, .page-menu.inverted nav > ul > li:hover > a, .page-menu.inverted nav > ul > li.active > a {
+    color: #2250fc; } }
+#search .btn-search-close {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+Topbar
+-----------------------------------------------------------------*/
+#topbar.topbar-colored, #topbar.topbar-colored.dark {
+  background-color: #2250fc; }
+
+/* ----------------------------------------------------------------
+Helpers
+-----------------------------------------------------------------*/
+.text-theme {
+  color: #2250fc !important; }
+
+/* ----------------------------------------------------------------
+Portfolio
+-----------------------------------------------------------------*/
+.portfolio-item .portfolio-description a:hover i,
+.portfolio-item .grid-description a:hover i,
+.portfolio-item .portfolio-links a:hover i,
+.grid-item .portfolio-description a:hover i,
+.grid-item .grid-description a:hover i,
+.grid-item .portfolio-links a:hover i {
+  background-color: #2250fc;
+  border: 1px solid #2250fc; }
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+.widget-tweeter li a,
+.widget-twitter li a {
+  color: #2250fc; }
+
+.tags a:hover, .tags a:focus, .tags a:active, .tags a.active {
+  background-color: #2250fc;
+  border-color: #2250fc; }
+
+/*# sourceMappingURL=theme.css.map */

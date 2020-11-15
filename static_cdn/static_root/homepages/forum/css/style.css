@@ -1,0 +1,32 @@
+    .forum {
+  border-radius: 4px;
+  padding: 20px 26px;
+  background-color: #fff;
+}
+.forum .fa {
+  width: 1em;
+  text-align: center;
+}
+.forum table th {
+  width: 6em;
+  width: 14em;
+}
+.forum thead tr > th {
+  background-color: #0127ff
+  color: #fff;
+  border-bottom: 0;
+}
+.forum thead tr:first-child th:first-child {
+  border-top-left-radius: 4px;
+}
+.forum thead tr:last-child th:last-child {
+  border-top-right-radius: 4px;
+}
+.forum thead tr h3 {
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 22px;
+}
+.forum h4 > small {
+  display: block;
+}

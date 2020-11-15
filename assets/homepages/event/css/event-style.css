@@ -1,0 +1,43 @@
+.event-info-box {
+  background: #111;
+  padding: 40px 0;
+}
+
+.event-info-box .col-lg-3, 
+.event-info-box .col-lg-4 {
+	border-right: 1px solid #333;
+}
+.event-info-box .col-lg-3:last-child, 
+.event-info-box .col-lg-4:last-child {
+	border-right: 0;
+}
+
+.event-info-icon {
+  color: #fff;
+  float: left;
+  clear: both;
+  padding: 10px 22px;
+  width: 70px;
+}
+
+.event-info-content .info-title {
+    font-size: 18px;
+    font-weight: 800;
+	color: #b41525;
+}
+.event-info-content .info-description {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+	margin-bottom:6px;
+}
+
+
+
+.post-title {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+
+
+

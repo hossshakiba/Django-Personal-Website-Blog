@@ -1,0 +1,18 @@
+/*price menu list*/
+
+.price-menu-list {
+	padding: 0;
+}
+
+.price-menu-list li {
+	margin-bottom: 30px;
+}
+
+.price-menu-list li > h2 {
+  margin-bottom: 0;
+}
+
+.price-menu-list li > p {
+	  margin-bottom: 8px;
+	opacity: 0.6;
+}

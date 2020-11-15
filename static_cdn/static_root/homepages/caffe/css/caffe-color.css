@@ -1,0 +1,370 @@
+/* COLOR BLUE */
+/* DEFAULT HEX COLOR: #48190d */
+/* CHANE IT BY REPLEACING THE VALUE ABOVE */
+
+::-moz-selection {
+	background: #48190d;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #48190d;
+	text-shadow: none;
+	color: #fff;
+}
+
+.color-font,
+.color-font a,
+.list-tweets li a,
+.text-colored{
+    color: #48190d !important;
+}
+
+.progress-bar-container.color .progress-bar {
+	background-color: #48190d;
+	color: #fff;
+}
+
+.blockquote-color {
+	background-color: #48190d;
+	color: #fff;
+}
+
+.blockquote-color > small {
+	color: #fff;
+}
+/*buttons*/
+
+
+.button.color,
+.btn.btn-primary {
+	background-color: #48190d;
+	border-color: #48190d;
+	color: #fff;
+}
+
+
+/*go to top*/
+
+.scrollTop-button {
+	background-color: #48190d;
+}
+
+.scrollTop-button {
+	color: #fff;
+}
+
+nav .main-menu .dropdown-menu {
+	border-color: #48190d;
+}
+
+
+#topbar.topbar-colored {
+	background-color: #48190d;
+}
+
+/*scrollspy nav */
+/*.sidebar-menu ul.nav-tabs li, */
+.sidebar-menu ul.nav-tabs li:hover 
+.sidebar-menu ul.nav-tabs li a, 
+.sidebar-menu ul.nav-tabs li a:hover,
+.sidebar-menu ul.nav-tabs li.active a, 
+.sidebar-menu ul.nav-tabs li.active a:hover
+{
+	color: #fff;
+	background: #48190d;
+	border: 1px solid #48190d;
+}
+/*Bootstrap defaults overrides*/
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+	background-color: #48190d;
+	border-color: #48190d;
+}
+
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text {
+	color: #fff;
+}
+
+.list-group-item.active > .badge,
+.nav-pills > .active > a > .badge {
+	color: #48190d;
+}
+
+pre {
+	background-color: #fcfcfc;
+	border: 1px solid #ececec;
+}
+
+.alert {
+	border-left-width: 10px;
+	border-radius: 0;
+}
+
+.alert-success {
+	background-color: #5cb85c;
+	border-color: #53af53;
+}
+
+.alert-info {
+	background-color: #2699c8;
+	border-color: #3aaddc;
+}
+
+.alert-warning {
+	background-color: #f6b63a;
+	border-color: #ffcd51;
+}
+
+.alert-danger {
+	background-color: #de4b37;
+	border-color: #f3604c;
+}
+
+.alert,
+.alert a.alert-link {
+	color: #fff;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	background-color: #48190d;
+	border-color: #48190d;
+	color: #fff;
+}
+
+.pagination > li > a:hover i,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	color: #fff;
+}
+/*navs*/
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+	background-color: #48190d;
+	color: #fff;
+}
+/*Typography*/
+
+a:hover {
+	color: #48190d;
+}
+
+
+
+
+
+
+
+
+
+/*dropcat & highlight*/
+.dropcap.dropcap-colored,
+.dropcap.dropcap-colored a,
+.highlight.highlight-colored,
+.highlight.highlight-colored a{
+	background-color: #48190d;
+	color: #fff;
+}
+
+/*timeline*/
+.timeline.timeline-colored .timeline-circles:before,
+.timeline.timeline-colored .timeline-circles:after,
+.timeline.timeline-colored .timeline-date,
+.timeline.timeline-colored:before 
+{
+    background-color: #48190d;
+    color: #fff;
+}
+
+.timeline.timeline-colored li .timeline-block:before {
+  border-color: transparent #48190d;
+
+}
+
+
+.timeline.timeline-colored  .timeline-block-image {
+  border-color: #48190d;
+}
+
+
+.timeline.timeline-colored.timeline-simple .timeline-date {
+  background-color: #fff;
+  border: 1px solid #48190d;
+    color: #48190d;
+}
+/*tabs*/
+
+.border .tabs-navigation li.active a:after {
+	background: #48190d;
+}
+/*accordions*/
+
+.breadcrumb a:hover {
+	color: #48190d;
+}
+/*color*/
+
+.accordion.color .ac-item .ac-title {
+	background: #48190d;
+	color: #fff;
+}
+
+.accordion.color-border-bottom .ac-item .ac-title {
+	border-bottom: 1px dotted #48190d;
+}
+
+.accordion.color-border-bottom .ac-item .ac-title:before {
+	color: #48190d;
+}
+/*ICONS*/
+
+.icon-box.color .icon i {
+	background: #48190d;
+	color: #fff;
+}
+
+.icon-box.color .icon i:after {
+	box-shadow: 0 0 0 3px #48190d;
+}
+
+.icon-box.border.color .icon,
+.icon-box.border.color .icon i {
+	color: #48190d;
+	border-color: #48190d;
+}
+
+.icon-box.fancy.color .icon i {
+	color: #48190d;
+	background-color: transparent;
+}
+/*FONT AWESOME ICONS*/
+
+.fontawesome-list-icon .fa-hover a:hover {
+	background-color: #48190d;
+}
+/*
+.navbar-default.style1 .navbar-nav > .open > a, .navbar-default.style1 .navbar-nav > .open > a:hover, .navbar-default.style1 .navbar-nav > .open > a:focus{color: #fff;}
+a, .pageXofY .pageX, .pricing .bestprice .name, .filter li a:hover, .widget_links ul li a:hover, #contacts a:hover, .title-color, .ms-staff-carousel .ms-staff-info h4, .filter li a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, a.go-about:hover, .text_color, .navbar-nav .dropdown-menu a:hover, .profile .profile-name, #elements h4, #contact li a:hover, #agency-slider h5, .ms-showcase1 .product-tt h3, .filter li a.active, .contacts li i, .big-icon i, .navbar-default.dark .navbar-brand:hover,.navbar-default.dark .navbar-brand:focus, a.p-button.border:hover, .navbar-default.light-menu .navbar-nav > li > a.selected, .navbar-default.light-menu .navbar-nav > li > a.selected:hover, .navbar-default.light-menu .navbar-nav > li > a.selected, .navbar-default.light-menu .navbar-nav > .open > a,.navbar-default.light-menu .navbar-nav > .open > a:hover, .navbar-default.light-menu .navbar-nav > .open > a:focus, .light-menu .dropdown-menu > li > a:hover, .light-menu .dropdown-menu > li > a:focus, .navbar-default.dark.light-menu .dropdown-menu > li > a:hover, a.social:hover:before, .symbol.colored i, .icon-nofill, .slidecontent-bi .project-title-bi p a:hover, .grid .figcaption a.thumb-link:hover, .tp-caption a:hover, .btn-1d:hover, .btn-1d:active, #contacts .tweet_text a, #contacts .tweet_time a, .social-font-awesome li a:hover, h2.post-title a:hover, .tags a:hover, .special_tabs  .current .designare_icon_special_tabs i, .des-button-color span, #contacts .form-success p{
+  color: #48190d;
+}
+a.sf-button.hide-icon, .tabs li.current, .readmore:hover, .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, a.p-button:hover, a.p-button.colored, .navbar-default.style1 .navbar-nav > li > a.selected, .light #contacts a.p-button, .tagcloud a:hover, .rounded.fill, .colored-section, .pricing .bestprice .price, .pricing .bestprice .signup, .signup:hover, .divider.colored, .services-graph li span, .no-touch .hi-icon-effect-1a .hi-icon:hover, .hi-icon-effect-1b .hi-icon:hover, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .no-touch .hi-icon-effect-1b .hi-icon:hover, .symbol.colored .line-left, .symbol.colored .line-right, .projects-overlay #projects-loader, .panel-group .panel.active .panel-heading, .mail-box, .double-bounce1, .double-bounce2, .des-button-color-1d:after, .container1 > div, .container2 > div, .container3 > div, .cbp-l-caption-buttonLeft:hover, .cbp-l-caption-buttonRight:hover{
+	background-color:#48190d;
+}
+.widget_posts .tabs li.current{border: 1px solid #48190d;}
+.hi-icon-effect-1 .hi-icon:after{box-shadow: 0 0 0 3px #48190d;}
+.colored-section:after {border: 20px solid #48190d;}
+.filter li a.active, .filter li a:hover, .panel-group .panel.active .panel-heading{border:1px solid #48190d}
+a.p-button.colored:hover{background-color: #2586c7;}
+.navbar-default.light-menu.border .navbar-nav > li > a.selected:before, .navbar-default.light-menu.border .navbar-nav > li > a.selected:hover, .navbar-default.light-menu.border .navbar-nav > li > a.selected{
+	border-bottom: 1px solid #48190d;
+}
+.bs-callout-theme-color {
+	background-color: #d3ecfd;
+	border-color: #48190d;
+}
+.doubleborder{
+	border: 6px double #48190d;
+}
+.special_tabs .current .designare_icon_special_tabs{
+	border: 2px solid #48190d;
+}
+.overlay-color{
+	background-color: rgba(4,172,187 , 0.9);
+}
+.overlay-color.medium{
+	background-color: rgba(4,172,187 , 0.85);
+}
+.triangle{border-left-color: #48190d !important;}
+.overlay-color.soft{
+	background-color: rgba(4,172,187 , 0.25);
+}
+
+.des-button-color{
+	border: 1px solid #48190d;
+}
+*/
+/*lists icons*/
+
+ul.list-icon li i {
+	color: #48190d;
+}
+/* ----------------------------------------------------------------
+    Backgrounds
+-----------------------------------------------------------------*/
+
+.background-colored {
+	background-color: #48190d !important;
+}
+
+/* ----------------------------------------------------------------
+    NPROGRESS
+-----------------------------------------------------------------*/
+
+#nanobar-progress div {
+	background: #48190d !important;
+}
+
+
+/* ----------------------------------------------------------------
+    PORTFOLIO
+-----------------------------------------------------------------*/
+.portfolio-filter a.ptf-active,
+.portfolio-filter a:hover {
+  background-color: #48190d;
+}
+
+/* ----------------------------------------------------------------
+    HEADINGS
+-----------------------------------------------------------------*/
+.heading-title-border-color {
+    border-color: #48190d;
+}
+
+
+/* ----------------------------------------------------------------
+    IMAGE BOX
+-----------------------------------------------------------------*/
+.image-box-links a {
+    background-color: #48190d;
+}
+
+
+.image-box.effect.bleron {
+     background-color: #48190d;
+}
+
+.image-block-content .feature-icon {
+  	background-color: #48190d;
+}
+
+.image-box.effect.bleron p.image-box-links a {
+  color: #48190d;
+}
+
+
+
+/* ----------------------------------------------------------------
+    Shop products
+-----------------------------------------------------------------*/
+.product .product-wishlist a:hover {
+	border-color: #48190d;
+}
+
+
+#shopping-cart .shopping-cart-items {
+	background-color: #48190d;
+}

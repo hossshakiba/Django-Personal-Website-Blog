@@ -1,0 +1,35 @@
+.real-estate-form-container {
+	overflow: inherit !important;
+  margin-bottom:-300px;
+}
+
+.real-estate-form {
+  position: relative;
+  top: -300px;
+  z-index: 4 !important;
+}
+
+.real-estate-form #book {
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+
+@media (max-width: 991px) {
+	.real-estate-form-container {
+	overflow: hidden !important;
+}
+
+.real-estate-form {
+  position: relative;
+  top: 0px;
+
+  margin-bottom:0px;
+  z-index: 4 !important;
+}
+
+}
+	
+	
+	
+	
