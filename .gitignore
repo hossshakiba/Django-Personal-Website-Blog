@@ -13,9 +13,7 @@ db.sqlite3-journal
 media
 /blog/secrets.py
 .DS_Store
-static_cdn
 .vscode
-assets
 venv
 secret_key.py
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
