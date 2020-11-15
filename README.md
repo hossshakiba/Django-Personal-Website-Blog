@@ -15,6 +15,7 @@ People can make contact with you and also hire you as a develper.
 There are a few steps to take before running the website on your localhost :
 <ul style="line-height:180%">
   <li>Clone the repository</li>
+  <li>Launch a virtual environment</li>
   <li>Create a database</li>
   <li>Run the project on localhost</li>
 </ul>
@@ -25,6 +26,15 @@ There are a few steps to take before running the website on your localhost :
 ```bash
 git clone https://github.com/hossshakiba/Django-Personal-Website-Blog.git
 ```
+### Launch a virtual environment
+
+```bash
+virtualenv venv
+```
+```bash
+source venv/bin/activate
+```
+
 ### Create a database
 
 ```bash
