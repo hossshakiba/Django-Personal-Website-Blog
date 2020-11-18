@@ -16,6 +16,7 @@ There are a few steps to take before running the website on your localhost :
 <ul style="line-height:180%">
   <li>Clone the repository</li>
   <li>Launch a virtual environment</li>
+  <li>Install the requirements</li>
   <li>Create a database</li>
   <li>Run the project on localhost</li>
 </ul>
@@ -33,6 +34,10 @@ virtualenv venv
 ```
 ```bash
 source venv/bin/activate
+```
+### Install the requirements
+```bash
+pip install -r requirements.txt
 ```
 
 ### Create a database
