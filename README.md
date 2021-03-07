@@ -50,6 +50,4 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-
-
-
+**Note !** : This project is not a best practice and includes some codes that might not be clean as it was one of my first efforts in django. 
