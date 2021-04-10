@@ -1,6 +1,6 @@
 # Django-Personal-Website-Blog
 A full-featured personal website with a blog, made by django.
-<br>You can check the website out on www.hossshakiba.com
+
 ## Blog
 There's a blog for sharing your thoughts and knowledge with others, and people can comment their ideas on each post.
 You can make your posts look prettier and more professional, using a powerful rich text editor that is implemented in the code and comes very handy for developers.
